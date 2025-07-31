@@ -40,3 +40,4 @@ export default function Hero() {
     </section>
   );
 }
+// updated hero section for commit count
