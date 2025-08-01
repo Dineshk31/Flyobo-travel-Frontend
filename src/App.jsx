@@ -5,13 +5,13 @@ import Packages from "./pages/packages";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import HeroSection from "./components/heroSection.jsx";
-import services from "./components/services.jsx";
+import Services from "./components/services.jsx";
 
 function App() {
   return (
     <>
       <Router>
-        <services />
+        <Services />
         <HeroSection />
         <Navbar />
         <Routes>
