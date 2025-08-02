@@ -7,10 +7,12 @@ import Contact from "./pages/contact";
 import HeroSection from "./components/heroSection.jsx";
 import Services from "./components/Services.jsx";
 import Footer from "./components/Footer.jsx"
+import NotFound from "./components/NotFound.jsx"
 
 function App() {
   return (
     <>
+    <Route path="*" element={<NotFound />} />
       <Router>
         <Footer />
         <Services />
