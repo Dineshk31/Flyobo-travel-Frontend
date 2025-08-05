@@ -1,4 +1,4 @@
-# ✈️ Travel Agency Frontend
+# ✈️ Flyobo Travel Agency Frontend
 
 A beautiful, responsive travel booking frontend built using **React**, **TypeScript**, and **Tailwind CSS**. Designed to showcase popular destinations, travel packages, and a modern booking experience for users.
 
