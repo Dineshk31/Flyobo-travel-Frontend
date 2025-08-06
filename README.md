@@ -1,8 +1,21 @@
-# Travel Agency Frontend
+# ✈️ Flyobo Travel Agency Frontend
 
-A modern responsive frontend for a travel agency website built using React and Vite.
+A beautiful, responsive travel booking frontend built using **React**, **TypeScript**, and **Tailwind CSS**. Designed to showcase popular destinations, travel packages, and a modern booking experience for users.
 
-## 🚀 Stack
-- React + Vite
-- React Router
-- Tailwind CSS 
+## 🚀 Features
+
+- 🌍 Hero section with stunning visuals
+- 🧳 Popular destination cards
+- 🧭 Travel packages with pricing
+- 📱 Fully responsive UI
+- ⚡ Built with React + Tailwind for speed and scalability
+- 📦 Component-driven architecture
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, TypeScript
+- **Styling**: Tailwind CSS
+- **Tooling**: Vite, Git
+
+## 📁 Folder Structure
+
