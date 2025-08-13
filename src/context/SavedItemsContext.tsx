@@ -30,3 +30,38 @@ export const SavedItemsProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setSavedItems(JSON.parse(storedItems));
     }
   }, []);
+
+  // Save to localStorage when items change
+  useEffect(() => {
+    localStorage.setItem('flyobo_saved_items', JSON.stringify(savedItems));
+  }, [savedItems]);
+
+  const addToSaved = (item: SavedItem) => {
+    setSavedItems((prevItems) => {
+      // Check if item already exists
+      if (prevItems.some((prevItem) => prevItem.id === item.id)) {
+        return prevItems;
+      }
+      return [...prevItems, item];
+    });
+  };
+
+  const removeFromSaved = (id: string) => {
+    setSavedItems((prevItems) => 
+      prevItems.filter((item) => item.id !== id)
+    );
+  };
+
+  const isSaved = (id: string) => {
+    return savedItems.some((item) => item.id === id);
+  };
+
+  const value = {
+    savedItems,
+    addToSaved,
+    removeFromSaved,
+    isSaved,
+  };
+
+  return <SavedItemsContext.Provider value={value}>{children}</SavedItemsContext.Provider>;
+};
