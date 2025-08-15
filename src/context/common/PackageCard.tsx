@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Calendar, MapPin } from 'lucide-react';
 import { Package } from '../../types';
-import { useSavedItems } from '../../context/SavedItemsContext';
+import { useSavedItems } from '../SavedItemsContext';
 
 interface PackageCardProps {
   package: Package;

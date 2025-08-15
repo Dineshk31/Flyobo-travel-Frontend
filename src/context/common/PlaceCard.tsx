@@ -2,7 +2,7 @@ import React from 'react';
 import { Heart, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Place } from '../../types';
-import { useSavedItems } from '../../context/SavedItemsContext';
+import { useSavedItems } from '../SavedItemsContext';
 
 interface PlaceCardProps {
   place: Place;

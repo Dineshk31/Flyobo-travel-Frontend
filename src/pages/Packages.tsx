@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PackageCard from '../components/common/PackageCard';
+import PackageCard from '../context/common/PackageCard';
 import { Package } from '../types';
 import { Search, Filter, X, Calendar, DollarSign } from 'lucide-react';
 
